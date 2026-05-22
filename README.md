@@ -93,7 +93,7 @@ sudo pkg install fvwm jwm libxml2
 
 ```bash
 # Clone the repository
-git clone https://github.com/sfloess/de-converter.git
+git clone https://github.com/FlossWare/de-converter.git
 cd de-converter
 
 # Extract your LXDE config
