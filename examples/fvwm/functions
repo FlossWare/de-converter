@@ -1,0 +1,17 @@
+# FVWM Functions
+# Generated from LXDE configuration
+
+# Window Movement Functions
+AddToFunc Move-or-Raise I Raise
++ M Move
++ D Lower
+
+AddToFunc Resize-or-Raise I Raise
++ M Resize
++ D Lower
+
+# Toggle Desktop Function
+AddToFunc ToggleShowDesktop
++ I All (CurrentPage, !Iconic, !Sticky) Iconify on
++ I TestRc (Match) Break
++ I All (CurrentPage, Iconic, !Sticky) Iconify off

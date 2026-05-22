@@ -1,0 +1,640 @@
+{
+  "applications": {
+    "archive": "xarchiver",
+    "audio_player": "lxmusic",
+    "bittorent": "deluge-gtk",
+    "clipboard": "lxclipboard",
+    "document": "libreoffice",
+    "image_display": "gpicview",
+    "keyring": "ssh-agent",
+    "lock": "lxlock",
+    "pdf_reader": "evince",
+    "polkit": "lxpolkit",
+    "proxy": "build-in",
+    "quit": "lxsession-logout",
+    "spreadsheet": "libreoffice",
+    "tasks": "htop",
+    "terminal": "terminator",
+    "text_editor": "vim",
+    "video_player": "smplayer",
+    "webbrowser": "/usr/bin/vivaldi-stable",
+    "windows": "openbox-lxde",
+    "xsettings": "build-in"
+  },
+  "autostart": [
+    "lxpanel --profile LXDE",
+    "pcmanfm --desktop --profile LXDE",
+    "xscreensaver -no-splash"
+  ],
+  "desktops": {
+    "count": 2,
+    "names": [
+      "Amanda",
+      "Scot"
+    ]
+  },
+  "gtk": {
+    "font": "Sans 8",
+    "icon_theme": "Mist",
+    "theme": "Adwaita"
+  },
+  "keybindings": [
+    {
+      "action": "DesktopLeft",
+      "command": null,
+      "key": "C-A-Left"
+    },
+    {
+      "action": "DesktopRight",
+      "command": null,
+      "key": "C-A-Right"
+    },
+    {
+      "action": "DesktopUp",
+      "command": null,
+      "key": "C-A-Up"
+    },
+    {
+      "action": "DesktopDown",
+      "command": null,
+      "key": "C-A-Down"
+    },
+    {
+      "action": "SendToDesktopLeft",
+      "command": null,
+      "key": "S-A-Left"
+    },
+    {
+      "action": "SendToDesktopRight",
+      "command": null,
+      "key": "S-A-Right"
+    },
+    {
+      "action": "SendToDesktopUp",
+      "command": null,
+      "key": "S-A-Up"
+    },
+    {
+      "action": "SendToDesktopDown",
+      "command": null,
+      "key": "S-A-Down"
+    },
+    {
+      "action": "Desktop",
+      "command": null,
+      "key": "W-F1"
+    },
+    {
+      "action": "Desktop",
+      "command": null,
+      "key": "W-F2"
+    },
+    {
+      "action": "Desktop",
+      "command": null,
+      "key": "W-F3"
+    },
+    {
+      "action": "Desktop",
+      "command": null,
+      "key": "W-F4"
+    },
+    {
+      "action": "ToggleShowDesktop",
+      "command": null,
+      "key": "W-d"
+    },
+    {
+      "action": "ToggleShowDesktop",
+      "command": null,
+      "key": "C-A-d"
+    },
+    {
+      "action": "Close",
+      "command": null,
+      "key": "A-F4"
+    },
+    {
+      "action": "Lower",
+      "command": null,
+      "key": "A-Escape"
+    },
+    {
+      "action": "ShowMenu",
+      "command": null,
+      "key": "A-space"
+    },
+    {
+      "action": "NextWindow",
+      "command": null,
+      "key": "A-Tab"
+    },
+    {
+      "action": "PreviousWindow",
+      "command": null,
+      "key": "A-S-Tab"
+    },
+    {
+      "action": "NextWindow",
+      "command": null,
+      "key": "C-A-Tab"
+    },
+    {
+      "action": "Execute",
+      "command": "pcmanfm",
+      "key": "W-e"
+    },
+    {
+      "action": "Execute",
+      "command": "pcmanfm --find-files",
+      "key": "W-f"
+    },
+    {
+      "action": "Execute",
+      "command": "lxpanelctl run",
+      "key": "W-r"
+    },
+    {
+      "action": "Execute",
+      "command": "lxpanelctl run",
+      "key": "A-F2"
+    },
+    {
+      "action": "Execute",
+      "command": "lxpanelctl menu",
+      "key": "C-Escape"
+    },
+    {
+      "action": "Execute",
+      "command": "lxpanelctl menu",
+      "key": "A-F1"
+    },
+    {
+      "action": "ToggleFullscreen",
+      "command": null,
+      "key": "A-F11"
+    },
+    {
+      "action": "Execute",
+      "command": "lxtask",
+      "key": "A-C-Delete"
+    },
+    {
+      "action": "Execute",
+      "command": "gnome-screenshot -i",
+      "key": "Print"
+    },
+    {
+      "action": "Execute",
+      "command": "lxrandr",
+      "key": "XF86Display"
+    }
+  ],
+  "mouse_bindings": [
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "A-Left",
+      "context": null
+    },
+    {
+      "action": "Unshade",
+      "action_type": "Click",
+      "button": "A-Left",
+      "context": null
+    },
+    {
+      "action": "Move",
+      "action_type": "Drag",
+      "button": "A-Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "A-Right",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "A-Right",
+      "context": null
+    },
+    {
+      "action": "Lower",
+      "action_type": "Press",
+      "button": "A-Middle",
+      "context": null
+    },
+    {
+      "action": "DesktopPrevious",
+      "action_type": "Click",
+      "button": "A-Up",
+      "context": null
+    },
+    {
+      "action": "DesktopNext",
+      "action_type": "Click",
+      "button": "A-Down",
+      "context": null
+    },
+    {
+      "action": "DesktopPrevious",
+      "action_type": "Click",
+      "button": "C-A-Up",
+      "context": null
+    },
+    {
+      "action": "DesktopNext",
+      "action_type": "Click",
+      "button": "C-A-Down",
+      "context": null
+    },
+    {
+      "action": "SendToDesktopPrevious",
+      "action_type": "Click",
+      "button": "A-S-Up",
+      "context": null
+    },
+    {
+      "action": "SendToDesktopNext",
+      "action_type": "Click",
+      "button": "A-S-Down",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Move",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "ToggleMaximizeFull",
+      "action_type": "DoubleClick",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Lower",
+      "action_type": "Press",
+      "button": "Middle",
+      "context": null
+    },
+    {
+      "action": "Shade",
+      "action_type": "Click",
+      "button": "Up",
+      "context": null
+    },
+    {
+      "action": "Unshade",
+      "action_type": "Click",
+      "button": "Down",
+      "context": null
+    },
+    {
+      "action": "RaiseLower",
+      "action_type": "Click",
+      "button": "Right",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Lower",
+      "action_type": "Press",
+      "button": "Middle",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Right",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Resize",
+      "action_type": "Drag",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Right",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "ToggleOmnipresent",
+      "action_type": "Click",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "ToggleShade",
+      "action_type": "Click",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Iconify",
+      "action_type": "Click",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Middle",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Right",
+      "context": null
+    },
+    {
+      "action": "ToggleMaximizeFull",
+      "action_type": "Click",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "ToggleMaximizeVert",
+      "action_type": "Click",
+      "button": "Middle",
+      "context": null
+    },
+    {
+      "action": "ToggleMaximizeHorz",
+      "action_type": "Click",
+      "button": "Right",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Close",
+      "action_type": "Click",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "DesktopPrevious",
+      "action_type": "Click",
+      "button": "Up",
+      "context": null
+    },
+    {
+      "action": "DesktopNext",
+      "action_type": "Click",
+      "button": "Down",
+      "context": null
+    },
+    {
+      "action": "DesktopPrevious",
+      "action_type": "Click",
+      "button": "A-Up",
+      "context": null
+    },
+    {
+      "action": "DesktopNext",
+      "action_type": "Click",
+      "button": "A-Down",
+      "context": null
+    },
+    {
+      "action": "DesktopPrevious",
+      "action_type": "Click",
+      "button": "C-A-Up",
+      "context": null
+    },
+    {
+      "action": "DesktopNext",
+      "action_type": "Click",
+      "button": "C-A-Down",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Left",
+      "context": null
+    },
+    {
+      "action": "Focus",
+      "action_type": "Press",
+      "button": "Right",
+      "context": null
+    },
+    {
+      "action": "ShowMenu",
+      "action_type": "Press",
+      "button": "Middle",
+      "context": null
+    },
+    {
+      "action": "ShowMenu",
+      "action_type": "Press",
+      "button": "Right",
+      "context": null
+    },
+    {
+      "action": "DesktopPrevious",
+      "action_type": "Click",
+      "button": "Up",
+      "context": null
+    },
+    {
+      "action": "DesktopNext",
+      "action_type": "Click",
+      "button": "Down",
+      "context": null
+    },
+    {
+      "action": "DesktopPrevious",
+      "action_type": "Click",
+      "button": "A-Up",
+      "context": null
+    },
+    {
+      "action": "DesktopNext",
+      "action_type": "Click",
+      "button": "A-Down",
+      "context": null
+    }
+  ],
+  "panel": {
+    "autohide": true,
+    "height": 30,
+    "iconsize": 20,
+    "launchers": [
+      "lxde-screenlock.desktop",
+      "pcmanfm.desktop",
+      "NoMachine-base-unity.desktop",
+      "org.gnome.Cheese.desktop",
+      "libreoffice-base.desktop",
+      "galculator.desktop",
+      "chromium.desktop",
+      "cursor.desktop",
+      "beekeeper-studio.desktop",
+      "gcviewer.desktop",
+      {
+        "city": "Lake Royale",
+        "type": "weather"
+      },
+      {
+        "city": "28605",
+        "type": "weather"
+      },
+      {
+        "format": "%a  %Y-%m-%d%n%l:%M %P",
+        "type": "clock"
+      }
+    ],
+    "position": "bottom"
+  },
+  "source": "/exports/backups/vm/debian-lxde-workstation/home/sfloess/.config",
+  "window_manager": {
+    "focus": "follow_mouse",
+    "placement": "undermouse",
+    "raise_on_focus": false,
+    "theme": "Clearlooks-3.4"
+  }
+}

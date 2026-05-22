@@ -1,0 +1,23 @@
+# FVWM Window Styles
+# Generated from LXDE configuration
+
+# Default style
+Style * BorderWidth 4, HandleWidth 4
+Style * MWMFunctions, MWMDecor, HintOverride
+Style * ResizeOpaque, OpaqueMove
+Style * IconBox 10 80 -10 -10, IconGrid 10 10, IconFill left top
+
+# Theme: Clearlooks-3.4
+Style * Font "xft:Sans:size=8"
+
+# Colorsets
+Colorset 0 fg black, bg white
+Colorset 1 fg white, bg #555555
+Colorset 2 fg white, bg #0077CC
+
+# Window colors
+Style * Colorset 1, HilightColorset 2
+
+# FvwmPager style
+Style FvwmPager NoTitle, Sticky, WindowListSkip, CirculateSkip
+Style FvwmButtons NoTitle, Sticky, WindowListSkip, CirculateSkip

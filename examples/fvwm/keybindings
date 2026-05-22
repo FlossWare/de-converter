@@ -1,0 +1,37 @@
+# FVWM Key Bindings
+# Generated from LXDE configuration
+
+# Syntax: Key <keyname> <context> <modifier> <action>
+# Context: R=Root, W=Window, T=Title, I=Icon, A=All
+# Modifier: N=None, C=Ctrl, S=Shift, M=Meta/Alt, 4=Super
+
+Key Left A CM GotoDesk -1 0
+Key Right A CM GotoDesk 1 0
+Key Up A CM GotoDesk 0 -1
+Key Down A CM GotoDesk 0 1
+Key Left A MS MoveToDesk -1 0
+Key Right A MS MoveToDesk 1 0
+Key Up A MS MoveToDesk 0 -1
+Key Down A MS MoveToDesk 0 1
+Key F1 A 4 GotoDesk 0 0
+Key F2 A 4 GotoDesk 0 1
+Key F3 A 4 GotoDesk 0 2
+Key F4 A 4 GotoDesk 0 3
+Key d A 4 ToggleShowDesktop
+Key d A CM ToggleShowDesktop
+Key F4 A M Close
+Key Escape A M Lower
+Key space A M Menu
+Key Tab A M Next (CurrentDesk, !Iconic) Focus
+Key Tab A MS Prev (CurrentDesk, !Iconic) Focus
+Key Tab A CM Next (CurrentDesk, !Iconic) Focus
+Key e A 4 Exec exec pcmanfm
+Key f A 4 Exec exec pcmanfm --find-files
+Key r A 4 Exec exec lxpanelctl run
+Key F2 A M Exec exec lxpanelctl run
+Key Escape A C Exec exec lxpanelctl menu
+Key F1 A M Exec exec lxpanelctl menu
+Key F11 A M Fullscreen
+Key Delete A CM Exec exec lxtask
+Key Print A N Exec exec gnome-screenshot -i
+Key XF86Display A N Exec exec lxrandr

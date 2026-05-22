@@ -1,0 +1,31 @@
+# FVWM Configuration
+# Generated from LXDE configuration
+
+# Set the image path for icons and images
+ImagePath /usr/share/icons:/usr/share/pixmaps:+
+
+# Read modular configs
+Read examples/fvwm/styles
+Read examples/fvwm/functions
+Read examples/fvwm/menus
+Read examples/fvwm/keybindings
+
+# Virtual Desktops
+DesktopName 0 Amanda
+DesktopName 1 Scot
+DesktopSize 1x2
+
+# Window Manager Behavior
+Style * SloppyFocus
+Style * MouseFocusClickRaises
+Style * DecorateTransient
+Style * NoPPosition
+
+# Modules
+AddToFunc StartFunction
++ I Module FvwmButtons ButtonBar
++ I Module FvwmPager FvwmPager 0 1
+
+# Autostart Applications
+AddToFunc InitFunction
++ I Exec exec xscreensaver -no-splash

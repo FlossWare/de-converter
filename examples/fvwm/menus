@@ -1,0 +1,43 @@
+# FVWM Menus
+# Generated from LXDE configuration
+
+# Root Menu
+AddToMenu RootMenu "Main Menu" Title
++ "System" Popup SystemMenu
++ "File Manager" Popup File ManagerMenu
++ "Web Browsers" Popup Web BrowsersMenu
++ "IDEs" Popup IDEsMenu
++ "Databases" Popup DatabasesMenu
++ "Office" Popup OfficeMenu
++ "Other" Popup OtherMenu
++ "" Nop
++ "Restart FVWM" Restart
++ "Quit FVWM" Quit
+
+AddToMenu SystemMenu "System" Title
++ "Lxde Screenlock" Exec exec gtk-launch lxde-screenlock.desktop
+
+AddToMenu File ManagerMenu "File Manager" Title
++ "Pcmanfm" Exec exec gtk-launch pcmanfm.desktop
+
+AddToMenu Web BrowsersMenu "Web Browsers" Title
++ "Chromium" Exec exec gtk-launch chromium.desktop
+
+AddToMenu IDEsMenu "IDEs" Title
++ "Cursor" Exec exec gtk-launch cursor.desktop
+
+AddToMenu DatabasesMenu "Databases" Title
++ "Beekeeper Studio" Exec exec gtk-launch beekeeper-studio.desktop
+
+AddToMenu OfficeMenu "Office" Title
++ "Libreoffice Base" Exec exec gtk-launch libreoffice-base.desktop
+
+AddToMenu OtherMenu "Other" Title
++ "Nomachine Base Unity" Exec exec gtk-launch NoMachine-base-unity.desktop
++ "Org.Gnome.Cheese" Exec exec gtk-launch org.gnome.Cheese.desktop
++ "Galculator" Exec exec gtk-launch galculator.desktop
++ "Gcviewer" Exec exec gtk-launch gcviewer.desktop
+
+# Mouse bindings for menus
+Mouse 3 R A Menu RootMenu
+Mouse 2 R A Menu RootMenu
